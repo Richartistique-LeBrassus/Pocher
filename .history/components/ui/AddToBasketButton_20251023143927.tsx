@@ -1,0 +1,37 @@
+'use client';
+//import { Product } from "@/sanity.types";
+//import useBasketStore from "@/store/store";
+import { useEffect, useState } from "react";
+import "@/app/globals.css";
+
+//interface Props {
+//  product: Product;
+//  disabled?: boolean;
+//  className?: string; 
+//}
+
+export default function AddToBasketButton() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  //const { getItemCount, setItemQuantity } = useBasketStore();
+
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
+  if (!isClient) return null;
+
+  return (
+    <div className="flex flex-col gap-8">
+      <button
+       // onClick={() => {
+       //   setItemQuantity(product, 1);  // Directly use `1` for quantity instead of `qty`
+       // }}
+        className={`relative overflow-hidden bg-amber-400 hover:bg-amber-500
+          text-white transition-colors duration-150
+          py-3 uppercase text-base font-extrabold px-5 rounded-xs 
+          tracking-wide disabled:opacity-40 hover:cursor-pointer w-full
+          animate-beam-glow`}
+      >
+        <span className="relative z-10 logo">Add to Cart</span>
+      </button>
+    </div>
+  );
+}

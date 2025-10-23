@@ -1,0 +1,214 @@
+import { notFound } from 'next/navigation';
+import React from 'react';
+import AddToBasketButton from '@/components/ui/AddToBasketButton';
+import Image from 'next/image';
+import "@/app/globals.css";
+import Head from 'next/head';
+import type { Metadata } from 'next';
+import ProductImageWithLightbox from '@/components/ui/ProductImageWithLightbox';
+import DelayedPage from '@/components/ui/DelayedPage';
+import FadeInSection from '@/components/ui/FadeInSection';
+//import trial from "../../../public/images/";
+
+
+interface ImageType {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: "porsche-917k-gulf-edition" }> }
+): Promise<Metadata> {
+  const { slug } = await params;
+  //const product = "porsche-917k-gulf-edition";
+
+  //if (!product) {
+  //  return {
+  //    title: "Product Not Found | Écurie Richartistique",
+  //    description: "The requested product could not be found.",
+  //  };
+  //}
+
+  return {
+    title: `porsche-917k-gulf-edition | Écurie Richartistique`,
+    description: `Explore the porsche-917k-gulf-edition in 1:18 scale. Premium craftsmanship, limited stock.`,
+    openGraph: {
+      title: `porsche-917k-gulf-edition | Écurie Richartistique`,
+      description: `Explore the porsche-917k-gulf-edition in 1:18 scale. Premium craftsmanship, limited stock.`,
+      images: "../../public/images/1.webp",
+/*        ? [
+            {
+              url: imageUrl(product.images[0]).url(),
+              width: 1200,
+              height: 630,
+              alt: product.name,
+            },
+          ]
+        : [],*/
+    },
+  };
+}
+
+export const dynamic = "force-static";
+export const revalidate = 60;
+
+export default async function ProductPage({
+  params,
+}: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const product = "porsche-917k-gulf-edition";
+
+  //if (!product?.name || product.price == null) return notFound();
+//
+  //const isOutOfStock = product.stock != null && product.stock <= 0;
+//
+  //const images: ImageType[] = (product.images || []).map((img: Record<string, unknown>) => ({
+  //  src: imageUrl(img).url() || '',
+  //  alt: (img.alt as string) ?? 'Product Image',
+  //}));
+
+  //const mainImage = images[0]?.src || '/images/logo.png';
+  //const secondImage = images[1]?.src || '';
+  //const thirdImage = images[2]?.src || '';
+  const fourthImage = "../../../public/images/1.webp";
+  const fifthImage = "../../../public/images/1.webp";
+  const sixthImage = "../../../public/images/1.webp";
+  // const seventhImage = images[6]?.src || '';
+
+  return (
+    <DelayedPage>
+      <>
+        <Head>
+          <link rel="preload" href="../../public/images/1.webp" as="image" />
+          {/*{secondImage && <link rel="preload" href={secondImage} as="image" />}*/}
+          {/*{thirdImage && <link rel="preload" href={thirdImage} as="image" />}*/}
+          {/*{fourthImage && <link rel="preload" href={fourthImage} as="image" />}*/}
+          {/*{fifthImage && <link rel="preload" href={fifthImage} as="image" />}*/}
+          {/*{sixthImage && <link rel="preload" href={sixthImage} as="image" />}*/}
+          {/*{seventhImage && <link rel="preload" href={seventhImage} as="image" />}*/}
+        </Head>
+
+        <div className="w-full bg-neutral-50 min-h-screen">
+          <div className="flex flex-col w-full min-h-fit gap-1">
+
+            <div className="relative grid grid-cols-1 gap-36 h-fit min-h-[800px] w-full max-w-3xl mx-auto mt-12">
+              <div className="relative w-full h-[400px] lg:h-fit px-5 py-6 sm:px-12">
+                <FadeInSection>
+                <div                   
+                  className="flex flex-col justify-between gap-7 w-full h-[95%] uppercase text-center"
+                >
+                  <h1 className="font-extrabold text-[27px] sm:text-3xl max-w-lg mx-auto">
+                    HK118 Porsche 917K - Gulf Edition
+                  </h1>
+                  <p className="text-sm">1:18 Scale</p>
+                  <p className="text-xl">£789.99</p>
+
+                  <div className="flex flex-col gap-8 sm:gap-9 lg:gap-10 xl:gap-11 2xl:gap-12">
+                    <AddToBasketButton product={product} />
+                    <p className="text-sm px-1 max-w-[560px] mx-auto">
+                      The striking Gulf livery is inspired by the car driven 
+                      by Motorsport legends Derek Bell and Jo Siffert at the 1971 1000km Monza. 
+                      One of the fastest racing cars of all time, 
+                      it came second in this race, 
+                      falling behind its sister Porsche 917K driven by 
+                      Pedro Rodriguez and Jackie Oliver.
+                    </p>
+
+                    <div className="flex flex-col text-sm tracking-tight gap-1">
+                      <p>More Details</p>
+                      <p>Customer Service</p>
+                      <p>Shipping & Returns</p>
+                    </div>
+                    <p className="text-sm tracking-wide">
+                      Average Delivery Time: 2-4 Working Days
+                    </p>
+                  </div>
+                </div>
+                </FadeInSection>
+              </div>
+
+              <FadeInSection>
+              <div className="relative w-full h-[55vw] max-h-[176px] max-w-[400px] 
+                mx-auto md:max-h-[190px] md:max-w-[450px] lg:max-h-[210px] lg:max-w-[480px]
+                mt-24 sm:mt-0"
+              >
+                  <Image
+                    className="object-cover w-full h-full rounded-full"
+                    src="../../../public/images/porsche-badge.png"
+                    alt="manufacturer's badge"
+                    layout="fill"
+                    loading="lazy"
+                  />
+              </div>
+              </FadeInSection>
+            </div>
+
+            <FadeInSection>
+            <div className="py-12 md:py-20 xl:py-28 2xl:py-36 grid grid-cols-2 gap-1 sm:inline-flex sm:justify-center w-full lg:gap-5 mx-auto">
+              <div className="relative w-full h-[85vw] sm:h-auto sm:w-[45vh] md:w-[70vh]">
+                  <Image
+                    className="object-cover w-full h-full rounded-4xl"
+                    src="../../../public/images/long.webp"
+                    alt="upper product-view"
+                    layout="fill"
+                    loading="lazy"
+                  />
+              </div>
+              <div className="relative w-full h-[85vw] sm:h-auto sm:w-[45vh] md:w-[70vh]">
+                <Image
+                  className="object-cover w-full h-full rounded-4xl"
+                  src="../../../public/images/have.jpg"
+                  alt="decorative image"
+                  width={1168}
+                  height={1752}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            </FadeInSection>
+
+            <FadeInSection>
+            <div className="py-12 md:py-20 xl:px-8 2xl:p-16 xl:py-28 2xl:py-36 grid grid-cols-3 gap-1
+              lg:gap-5 w-full"
+            >              
+              {[fourthImage, fifthImage, sixthImage].map((imgSrc, i) => (
+                <div
+                  key={i}
+                  className="relative h-[42.5vw] sm:h-[32vw] lg:h-[25vw] xl:h-[20vw] 2xl:h-[17vw] w-full"
+                >
+                  {imgSrc && (
+                    <Image
+                      className="object-cover w-full h-full rounded-4xl sm:rounded-full"
+                      src={imgSrc}
+                      alt="product"
+                      layout="fill"
+                      loading="lazy"
+                    />
+                  )}
+                </div>                
+              ))}              
+            </div>
+            </FadeInSection>
+
+            <FadeInSection>
+            <div className="mt-12 md:mt-20 xl:mt-28 2xl:mt-36 
+            relative w-full h-[70vw] sm:h-[47vw] md:h-[43vw] lg:h-[40vw] xl:h-[34vw] mx-auto">
+                <Image
+                  src="../../../public/images/trial.jpg"
+                  className="rounded-t-4xl xl:rounded-t-full object-center"
+                  alt="Decorative banner image"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                  priority
+                />
+            </div>
+            </FadeInSection>
+          </div>
+        </div>
+      </>
+    </DelayedPage>
+  );
+}
