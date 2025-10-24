@@ -76,10 +76,9 @@ export default async function ProductPage({
   //const mainImage = images[0]?.src || '/images/logo.png';
   //const secondImage = images[1]?.src || '';
   //const thirdImage = images[2]?.src || '';
-  const fourthImage = "/images/2-adorable.webp";
-  //const fifthImage = "/images/2-mystique.webp";
-  const fifthImage = "/images/2-fuhrung.webp";
-  const sixthImage = "/images/2-glove.webp";
+  const fourthImage = "/images/5.webp";
+  const fifthImage = "/images/brillen.webp";
+  const sixthImage = "/images/6.webp";
   // const seventhImage = images[6]?.src || '';
 
   return (
@@ -103,7 +102,7 @@ export default async function ProductPage({
             >*/}
             <div
               className={`relative w-full h-[632.5px] lg:h-[656.52px] xl:h-[712.5px] 2xl:h-[710.5px] 
-                mt-[67px]`}
+                mt-[60px]`}
             >
               <ProductImageWithLightbox  images={images} productName="Porsche 917k Gulf Edition" />
             </div>
@@ -157,12 +156,12 @@ export default async function ProductPage({
 
             <FadeInSection>
             <div className="py-12 md:py-20 xl:py-28 
-            2xl:py-36 grid grid-cols-2 gap-2 sm:inline-flex 
+            2xl:py-36 grid grid-cols-2 gap-1 sm:inline-flex 
             sm:justify-center w-full lg:gap-5 mx-auto">
               <div className="relative w-full h-[85vw] sm:h-auto sm:w-[45vh] md:w-[70vh]">
                   <Image
                     className="object-cover w-full h-full rounded-4xl"
-                    src="/images/2-bonnet.webp"
+                    src="/images/long.webp"
                     alt="upper product-view"
                     layout="fill"
                     loading="lazy"
@@ -171,7 +170,7 @@ export default async function ProductPage({
               <div className="relative w-full h-[85vw] sm:h-auto sm:w-[45vh] md:w-[70vh]">
                 <Image
                   className="object-cover w-full h-full rounded-4xl"
-                  src="/images/2-quer.webp"
+                  src="/images/have.jpg"
                   alt="decorative image"
                   width={1168}
                   height={1752}
@@ -192,7 +191,7 @@ export default async function ProductPage({
                 >
                   {imgSrc && (
                     <Image
-                      className="object-cover w-full h-full rounded-4xl "
+                      className="object-cover w-full h-full rounded-4xl sm:rounded-full"
                       src={imgSrc}
                       alt="product"
                       layout="fill"
@@ -205,19 +204,16 @@ export default async function ProductPage({
             </FadeInSection>
 
             <FadeInSection>
-            <div className="mt-20 xl:mt-28 2xl:mt-36 
-            relative w-full h-[80vw] sm:h-[47vw] md:h-[43vw] lg:h-[40vw] xl:h-[34vw] mx-auto">
+            <div className="mt-12 md:mt-20 xl:mt-28 2xl:mt-36 
+            relative w-full h-[70vw] sm:h-[47vw] md:h-[43vw] lg:h-[40vw] xl:h-[34vw] mx-auto">
                 <Image
                   src="/images/trial.jpg"
-                  className=" object-center"
+                  className="rounded-t-4xl xl:rounded-t-full object-center"
                   alt="Decorative banner image"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
                   priority
-                />
-                <div className="absolute inset-x-0 top-0 h-32 md:h-42 lg:h-52 bg-linear-to-b from-neutral-950 
-                  to-transparent pointer-events-none"
                 />
             </div>
             </FadeInSection>

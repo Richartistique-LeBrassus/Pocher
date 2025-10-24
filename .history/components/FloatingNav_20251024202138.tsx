@@ -118,21 +118,21 @@ export const FloatingNav = () => {
                 aria-label="Home"
               >
 
-                <div className="ecurie mr-[3px]">
+                <div className="ecurie mr-3">
                   <h2 className="text-[11px] sm:text-[12px] lg:text-base capitalize">
                     Pristine de Luxe Model Kits
                   </h2>
                 </div>
-                {/*<div className="-mt-2 sm:-mt-1 font-extrabold">
+                <div className="-mt-2 sm:-mt-1 logo font-extrabold">
                   <h2 className="text-[27px] sm:text-3xl lg:text-4xl tracking-[0.4em]">
                     Pocher
                   </h2>
-                </div>*/}
-                <div className="-mt-2 sm:-mt-1 logo font-extrabold">
-                  <h2 className="text-[27px] sm:text-3xl lg:text-4xl tracking-widest">
+                </div>
+                {/*<div className="-mt-1 logo font-bold">
+                  <h2 className="text-3xl tracking-tighter">
                     Pocher
                   </h2>
-                </div>
+                </div>*/}
               </Link>
             </motion.span>
               <div className="relative group mt-[4px]">

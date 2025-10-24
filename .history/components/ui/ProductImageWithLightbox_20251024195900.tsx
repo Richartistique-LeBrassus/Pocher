@@ -30,7 +30,7 @@ export default function ProductImageWithLightbox({ images, productName }: Props)
       <Lightbox images={images} productName={productName}>
         <div className="absolute inset-0 cursor-pointer">
           <Image
-            src="/images/trial-1.webp"
+            src="/images/1.webp"
             alt="main image"
             width={2000}
             height={850}
@@ -38,9 +38,7 @@ export default function ProductImageWithLightbox({ images, productName }: Props)
             priority
           />
         </div>
-        <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-neutral-950 
-        to-transparent pointer-events-none" />
-        <div className="absolute inset-x-0 bottom-0 h-42 bg-linear-to-t from-neutral-950 
+        <div className="absolute inset-x-0 bottom-0 h-22 bg-linear-to-t from-black 
         to-transparent pointer-events-none" />
       </Lightbox>
     </div>

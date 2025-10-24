@@ -76,10 +76,9 @@ export default async function ProductPage({
   //const mainImage = images[0]?.src || '/images/logo.png';
   //const secondImage = images[1]?.src || '';
   //const thirdImage = images[2]?.src || '';
-  const fourthImage = "/images/2-adorable.webp";
-  //const fifthImage = "/images/2-mystique.webp";
-  const fifthImage = "/images/2-fuhrung.webp";
-  const sixthImage = "/images/2-glove.webp";
+  const fourthImage = "/images/2-glove.webp";
+  const fifthImage = "/images/2-mystique.webp";
+  const sixthImage = "/images/2-adorable.webp";
   // const seventhImage = images[6]?.src || '';
 
   return (
@@ -205,19 +204,16 @@ export default async function ProductPage({
             </FadeInSection>
 
             <FadeInSection>
-            <div className="mt-20 xl:mt-28 2xl:mt-36 
-            relative w-full h-[80vw] sm:h-[47vw] md:h-[43vw] lg:h-[40vw] xl:h-[34vw] mx-auto">
+            <div className="mt-12 md:mt-20 xl:mt-28 2xl:mt-36 
+            relative w-full h-[70vw] sm:h-[47vw] md:h-[43vw] lg:h-[40vw] xl:h-[34vw] mx-auto">
                 <Image
                   src="/images/trial.jpg"
-                  className=" object-center"
+                  className="rounded-t-4xl  object-center"
                   alt="Decorative banner image"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
                   priority
-                />
-                <div className="absolute inset-x-0 top-0 h-32 md:h-42 lg:h-52 bg-linear-to-b from-neutral-950 
-                  to-transparent pointer-events-none"
                 />
             </div>
             </FadeInSection>

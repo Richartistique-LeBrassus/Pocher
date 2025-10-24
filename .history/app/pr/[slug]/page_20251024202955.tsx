@@ -216,7 +216,7 @@ export default async function ProductPage({
                   objectPosition="center"
                   priority
                 />
-                <div className="absolute inset-x-0 top-0 h-32 md:h-42 lg:h-52 bg-linear-to-b from-neutral-950 
+                <div className="absolute inset-x-0 top-0 h-32 md:h-42 lg:h-56 bg-linear-to-b from-neutral-950 
                   to-transparent pointer-events-none"
                 />
             </div>

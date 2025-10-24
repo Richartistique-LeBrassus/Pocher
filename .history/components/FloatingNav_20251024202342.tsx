@@ -129,7 +129,7 @@ export const FloatingNav = () => {
                   </h2>
                 </div>*/}
                 <div className="-mt-2 sm:-mt-1 logo font-extrabold">
-                  <h2 className="text-[27px] sm:text-3xl lg:text-4xl tracking-widest">
+                  <h2 className="text-[27px] sm:text-3xl lg:text-4xl tracking-[0.1em]">
                     Pocher
                   </h2>
                 </div>

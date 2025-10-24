@@ -38,7 +38,7 @@ export default function ProductImageWithLightbox({ images, productName }: Props)
             priority
           />
         </div>
-        <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-neutral-950 
+        <div className="absolute inset-x-0 top-0 h-60 bg-linear-to-b from-neutral-950 
         to-transparent pointer-events-none" />
         <div className="absolute inset-x-0 bottom-0 h-42 bg-linear-to-t from-neutral-950 
         to-transparent pointer-events-none" />

@@ -26,7 +26,7 @@ export default function AddToBasketButton() {
        // }}
         className={`relative overflow-hidden bg-red-800 hover:bg-red-900
           text-white transition-colors duration-150
-          py-3 uppercase text-base lg:text-lg font-extrabold px-5 rounded-lg 
+          py-3 uppercase text-base lg:text-lg font-extrabold px-5 rounded-xl 
           tracking-widest disabled:opacity-40 hover:cursor-pointer w-full
           animate-beam-glow`}
       >
