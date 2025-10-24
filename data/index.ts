@@ -1,6 +1,6 @@
 export const videos = [
   {
-    src: '/videos/gulf-bg.mp4',
+    src: '/videos/gulf.mp4',
     ariaLabel: 'View Product details for Porsche 917',
     genre: '1:8 Scale',
     title: 'Gulf Porsche 917K',
@@ -21,7 +21,7 @@ export const videos = [
     url: "/pr/porsche-917k-gulf-edition",
   },
   {
-    src: '/videos/917-martini.mp4',
+    src: '/videos/917.mp4',
     ariaLabel: 'View Product details for Porsche 917 Martini',
     genre: 'Pre-Order Available',
     title: 'Martini Porsche 917K',
