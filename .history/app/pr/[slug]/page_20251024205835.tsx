@@ -8,6 +8,7 @@ import type { Metadata } from 'next';
 import ProductImageWithLightbox from '@/components/ui/ProductImageWithLightbox';
 import DelayedPage from '@/components/ui/DelayedPage';
 import FadeInSection from '@/components/ui/FadeInSection';
+import trial from "/images/porsche-badge.png";
 
 
 interface ImageType {

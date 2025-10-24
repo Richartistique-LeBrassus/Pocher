@@ -8,6 +8,7 @@ import type { Metadata } from 'next';
 import ProductImageWithLightbox from '@/components/ui/ProductImageWithLightbox';
 import DelayedPage from '@/components/ui/DelayedPage';
 import FadeInSection from '@/components/ui/FadeInSection';
+import trial from "/images/porsche-badge.png";
 
 
 interface ImageType {
@@ -18,14 +19,10 @@ interface ImageType {
 }
 
 const images = [
-  { src: "/images/2-a.webp" },
-  { src: "/images/2-adorable.webp" },
-  { src: "/images/2-bonnet.webp" },
-  { src: "/images/2-fan.webp" },
-  { src: "/images/2-fuhrung.webp" },
-  { src: "/images/2-glove.webp" },
-  { src: "/images/2-mystique.webp" },
-  { src: "/images/2-quer.webp" },
+  { src: "/images/1.webp" },
+  { src: "/images/4.webp" },
+  { src: "/images/5.webp" },
+  { src: "/images/6.webp" },
 ];
 
 export async function generateMetadata(
