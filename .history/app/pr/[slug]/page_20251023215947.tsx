@@ -123,7 +123,7 @@ export default async function ProductPage({
                   <p className="text-xl text-red-100">£ 789.99</p>
 
                   <div className="flex flex-col gap-8 sm:gap-9 lg:gap-10 xl:gap-11 2xl:gap-12">
-                    <AddToBasketButton />
+                    <AddToBasketButton product={product} />
                     <p className="text-sm px-1 max-w-[560px] mx-auto text-white">
                       The striking Gulf livery is inspired by the car driven 
                       by Motorsport legends Derek Bell and Jo Siffert at the 1971 1000km Monza. 
