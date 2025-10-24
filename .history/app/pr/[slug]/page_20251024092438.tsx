@@ -33,16 +33,16 @@ export async function generateMetadata(
 
   //if (!product) {
   //  return {
-  //    title: "Product Not Found | POCHER",
+  //    title: "Product Not Found | Pocher",
   //    description: "The requested product could not be found.",
   //  };
   //}
 
   return {
-    title: `HK118 Porsche 917K - Gulf Edition | POCHER`,
+    title: `HK118 Porsche 917K - Gulf Edition | Pocher`,
     description: `Explore the HK118 Porsche 917K - Gulf Edition in 1:18 scale. Premium craftsmanship, limited stock.`,
     openGraph: {
-      title: `HK118 Porsche 917K - Gulf Edition | POCHER`,
+      title: `HK118 Porsche 917K - Gulf Edition | Pocher`,
       description: `Explore the HK118 Porsche 917K - Gulf Edition in 1:18 scale. Premium craftsmanship, limited stock.`,
       images: "../../public/images/1.webp",
 /*        ? [
