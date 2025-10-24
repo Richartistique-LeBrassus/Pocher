@@ -158,7 +158,8 @@ const cardVariants: Variants = {
                       const isActive = index === activeIndex;
                       const isPrev =
                         index === (activeIndex - 1 + featuredModels.length) % featuredModels.length;
-                      const isNext = index === (activeIndex + 1) % featuredModels.length;                              
+                      const isNext = index === (activeIndex + 1) % featuredModels.length;            
+                  
                       return (
                         <motion.div
                           key={index}

@@ -148,8 +148,8 @@ const cardVariants: Variants = {
                         prev === 0 ? featuredModels.length - 1 : prev - 1
                       )
                     }
-                    className="absolute left-2 z-20 bg-white/10
-                    text-amber-400 rounded-4xl px-2 py-4 hover:cursor-pointer"
+                    className="absolute left-2 z-20 bg-white/80  
+                    text-black rounded-xs p-2 hover:cursor-pointer"
                   >
                     <ChevronLeft size={20} />
                   </span>          
@@ -158,7 +158,8 @@ const cardVariants: Variants = {
                       const isActive = index === activeIndex;
                       const isPrev =
                         index === (activeIndex - 1 + featuredModels.length) % featuredModels.length;
-                      const isNext = index === (activeIndex + 1) % featuredModels.length;                              
+                      const isNext = index === (activeIndex + 1) % featuredModels.length;            
+                  
                       return (
                         <motion.div
                           key={index}
@@ -238,8 +239,8 @@ const cardVariants: Variants = {
                         prev === featuredModels.length - 1 ? 0 : prev + 1
                       )
                     }
-                    className="absolute right-2 z-20 bg-white/10 font-bold 
-                     text-amber-400 rounded-4xl px-2 py-4 hover:cursor-pointer"
+                    className="absolute right-2 z-20 bg-white/80 font-bold 
+                     text-black rounded-xs p-2 hover:cursor-pointer"
                   >
                     <ChevronRight size={20} />
                   </span>

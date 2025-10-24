@@ -148,8 +148,8 @@ const cardVariants: Variants = {
                         prev === 0 ? featuredModels.length - 1 : prev - 1
                       )
                     }
-                    className="absolute left-2 z-20 bg-white/10
-                    text-amber-400 rounded-4xl px-2 py-4 hover:cursor-pointer"
+                    className="absolute left-2 z-20 bg-white/80  
+                    text-black rounded-xs p-2 hover:cursor-pointer"
                   >
                     <ChevronLeft size={20} />
                   </span>          
@@ -158,7 +158,8 @@ const cardVariants: Variants = {
                       const isActive = index === activeIndex;
                       const isPrev =
                         index === (activeIndex - 1 + featuredModels.length) % featuredModels.length;
-                      const isNext = index === (activeIndex + 1) % featuredModels.length;                              
+                      const isNext = index === (activeIndex + 1) % featuredModels.length;            
+                  
                       return (
                         <motion.div
                           key={index}
@@ -193,7 +194,7 @@ const cardVariants: Variants = {
                             },
                           }}
                           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                            overflow-hidden cursor-pointer rounded-4xl will-change-transform"
+                            overflow-hidden cursor-pointer rounded-3xl will-change-transform"
                           style={{
                             width: isActive ? "90vw" : "55vw",
                             maxWidth: isActive ? "700px" : "380px",
@@ -209,7 +210,7 @@ const cardVariants: Variants = {
                               src={model.imageUrl}
                               alt={model.title}
                               fill
-                              className="object-cover rounded-4xl transition-transform duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]"
+                              className="object-cover rounded-3xl transition-transform duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]"
                               priority={isActive}
                             />
                             <div className="absolute bottom-0 p-6 text-white z-10">
@@ -238,8 +239,8 @@ const cardVariants: Variants = {
                         prev === featuredModels.length - 1 ? 0 : prev + 1
                       )
                     }
-                    className="absolute right-2 z-20 bg-white/10 font-bold 
-                     text-amber-400 rounded-4xl px-2 py-4 hover:cursor-pointer"
+                    className="absolute right-2 z-20 bg-white/80 font-bold 
+                     text-black rounded-xs p-2 hover:cursor-pointer"
                   >
                     <ChevronRight size={20} />
                   </span>

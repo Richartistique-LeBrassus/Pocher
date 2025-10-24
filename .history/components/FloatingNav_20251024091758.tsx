@@ -89,7 +89,7 @@ export const FloatingNav = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
-                      className="flex items-center gap-4 text-neutral-200 transition-colors duration-300"
+                      className="flex items-center gap-4 text-neutral-100 transition-colors duration-300"
                     >
                       <button
                         aria-label="Open menu"
@@ -145,7 +145,7 @@ export const FloatingNav = () => {
                   <ShoppingBag
                     size={26}
                     weight="duotone"
-                    className="text-neutral-200 transition-all duration-300 group-hover:scale-105"
+                    className="text-neutral-100 transition-all duration-300 group-hover:scale-105"
                   />
                   {/*{itemCount > 0 && (
                     <span

@@ -295,7 +295,7 @@ export default function Lightbox({ images = [], productName = "", children }: Pr
         {i === index && (
           <motion.div
             layoutId="thumb-border"
-            className="absolute inset-0 rounded-4xl border-3 border-white"
+            className="absolute inset-0 rounded-4xl border-2 border-red-800"
             transition={{ type: "spring", stiffness: 500, damping: 40 }}
           />
         )}

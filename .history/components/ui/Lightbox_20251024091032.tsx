@@ -227,7 +227,7 @@ export default function Lightbox({ images = [], productName = "", children }: Pr
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                       className="absolute"
                     >
-                      <span className="text-amber-400 underline underline-offset-2">{index + 1}</span> / {images.length}
+                      <span className="text-red-800 underline underline-offset-2">{index + 1}</span> / {images.length}
                     </motion.div>
                   </AnimatePresence>
                 </div>
@@ -295,7 +295,7 @@ export default function Lightbox({ images = [], productName = "", children }: Pr
         {i === index && (
           <motion.div
             layoutId="thumb-border"
-            className="absolute inset-0 rounded-4xl border-3 border-white"
+            className="absolute inset-0 rounded-4xl border-2 border-amber-400"
             transition={{ type: "spring", stiffness: 500, damping: 40 }}
           />
         )}

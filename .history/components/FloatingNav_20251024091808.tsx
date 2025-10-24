@@ -145,7 +145,7 @@ export const FloatingNav = () => {
                   <ShoppingBag
                     size={26}
                     weight="duotone"
-                    className="text-neutral-200 transition-all duration-300 group-hover:scale-105"
+                    className="text-neutral-100 transition-all duration-300 group-hover:scale-105"
                   />
                   {/*{itemCount > 0 && (
                     <span

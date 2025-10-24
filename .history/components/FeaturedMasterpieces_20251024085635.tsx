@@ -148,7 +148,7 @@ const cardVariants: Variants = {
                         prev === 0 ? featuredModels.length - 1 : prev - 1
                       )
                     }
-                    className="absolute left-2 z-20 bg-white/10
+                    className="absolute left-2 z-20 bg-white/20
                     text-amber-400 rounded-4xl px-2 py-4 hover:cursor-pointer"
                   >
                     <ChevronLeft size={20} />
@@ -158,7 +158,8 @@ const cardVariants: Variants = {
                       const isActive = index === activeIndex;
                       const isPrev =
                         index === (activeIndex - 1 + featuredModels.length) % featuredModels.length;
-                      const isNext = index === (activeIndex + 1) % featuredModels.length;                              
+                      const isNext = index === (activeIndex + 1) % featuredModels.length;            
+                  
                       return (
                         <motion.div
                           key={index}
