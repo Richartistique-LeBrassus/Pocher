@@ -101,7 +101,7 @@ export default async function ProductPage({
               className={`relative w-full h-[80vh] lg:h-[83vh] `}
             >*/}
             <div
-              className={`relative w-full h-[632.5px] lg:h-[656.52px] xl:h-[712.5px] 2xl:h-[710.5px]`}
+              className={`relative w-full h-[80vh] lg:h-[83vh]`}
             >
               <ProductImageWithLightbox  images={images} productName="Porsche 917k Gulf Edition" />
             </div>

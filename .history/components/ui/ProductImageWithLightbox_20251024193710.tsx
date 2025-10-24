@@ -17,16 +17,13 @@ export default function ProductImageWithLightbox({ images, productName }: Props)
             alt="main image"
             width={2000}
             height={850}
-            className="object-cover w-full h-full rounded-b-4xl"
+            className="object-cover rounded-b-4xl"
             priority
           />
         </div>
       </Lightbox>
-    </div>
-    
-    <div className="relative w-full h-[632.5px] lg:h-[656.52px] xl:h-[712.5px] 2xl:h-[710.5px] overflow-hidden">
-    */
-    <div className="relative w-full h-[632.5px] lg:h-[656.52px] xl:h-[712.5px] 2xl:h-[710.5px] overflow-hidden">
+    </div>*/
+    <div className="relative w-full h-[632.5px] lg:h-[656.52px] xl:h-[700.5px] overflow-hidden">
       <Lightbox images={images} productName={productName}>
         <div className="absolute inset-0 cursor-pointer">
           <Image
