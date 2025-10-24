@@ -158,23 +158,23 @@ export default function Lightbox({ images = [], productName = "", children }: Pr
                 }}
               >
                 <AnimatePresence mode="wait">
-                  <motion.div
-                    key={index}
-                    className="relative w-full h-[100vh] lg:h-[80vh]" // full height on all screens
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, scale: zoomed ? 1.5 : 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                  >
-                    <Image
-                      src={images[index].src}
-                      alt="N/A"
-                      fill
-                      className="object-contain"
-                      sizes="100vw"
-                      priority
-                    />
-                  </motion.div>
+                <motion.div
+  key={index}
+  className="relative w-full h-[100vh] lg:h-[80vh]" // full height on all screens
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1, scale: zoomed ? 1.5 : 1 }}
+  exit={{ opacity: 0 }}
+  transition={{ duration: 0.5, ease: "easeInOut" }}
+>
+  <Image
+    src={images[index].src}
+    alt="N/A"
+    fill
+    className="object-contain"
+    sizes="100vw"
+    priority
+  />
+</motion.div>
                 </AnimatePresence>
 
                 <button
