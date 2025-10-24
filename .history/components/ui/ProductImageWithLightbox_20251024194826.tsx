@@ -30,7 +30,7 @@ export default function ProductImageWithLightbox({ images, productName }: Props)
       <Lightbox images={images} productName={productName}>
         <div className="absolute inset-0 cursor-pointer">
           <Image
-            src="/images/trial-1.webp"
+            src="/images/1.webp"
             alt="main image"
             width={2000}
             height={850}
