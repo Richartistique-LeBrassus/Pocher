@@ -273,12 +273,12 @@ export default function Lightbox({ images = [], productName = "", children }: Pr
           alt="Thumbnail"
           fill
           sizes="80px"
-          className="object-cover rounded-xl"
+          className="object-cover rounded-2xl"
         />
         {i === index && (
           <motion.div
             layoutId="thumb-border"
-            className="absolute inset-0 rounded-xl border-3 border-white"
+            className="absolute inset-0 rounded-2xl border-3 border-white"
             transition={{ type: "spring", stiffness: 500, damping: 40 }}
           />
         )}

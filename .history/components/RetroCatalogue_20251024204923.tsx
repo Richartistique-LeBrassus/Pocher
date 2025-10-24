@@ -34,10 +34,10 @@ const ProductCategory = ({ name, type, src, alt }: (typeof productCategories)[0]
             width={280}  
             height={335} 
             loading="lazy"
-            className="w-[280px] h-[335px] lg:h-[400px] lg:w-[full] rounded-4xl
+            className="w-[280px] h-[335px] lg:h-[400px] lg:w-[full] rounded-full
             xl:h-[450px] xl:w-[315px] 2xl:h-[550px] 2xl:w-[370px]
-              object-cover brightness-[60%]
-              group-hover:brightness-100
+              object-cover brightness-75
+              group-hover:brightness-110
               transition-all duration-500 ease-in-out"
           />
         </div>
